@@ -375,7 +375,7 @@ if choice == "BMI and Income":
             break
     fig = px.scatter(df,x="income", y="BMI",
                  size="population", color= "gender", symbol = "country",
-                     hover_name="country", size_max=30)
+                     hover_name="year", size_max=30)
     fig.update_layout(xaxis_title = "Income (in thousands of dollars)", 
                       yaxis_title = "BMI")
 
