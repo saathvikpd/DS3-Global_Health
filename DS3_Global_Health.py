@@ -208,7 +208,7 @@ if choice == "%female in The House":
 
     fig = px.scatter(df, x="GDPs", y="%female in the house",
                      size="GDPs", color="Country Name",
-                     hover_name="Country Name", size_max=40)
+                     hover_name="Year", size_max=40)
     fig.update_layout(yaxis_title="%female in The House",
                       xaxis_range=(np.min(df['GDPs']) * 0.5, np.max(df['GDPs']) * 1.2),
                       yaxis_range=(np.min(df['%female in the house'])-10, np.max(df['%female in the house']) * 1.2))
